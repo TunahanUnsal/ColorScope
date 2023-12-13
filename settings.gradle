@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Templete Project"
+rootProject.name = "Color Scope"
 include ':app'

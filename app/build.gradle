@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.project'
+    namespace 'com.ezdream.color'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.project"
+        applicationId "com.ezdream.color"
         minSdk 24
         targetSdk 34
         versionCode 1
