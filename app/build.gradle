@@ -24,6 +24,21 @@ android {
         dataBinding true
     }
 
+    signingConfigs{
+        debug{
+            storeFile file("/Users/tunaunsal/Doc/private_key.pepk")
+            storePassword "789123"
+            keyAlias "ezdream"
+            keyPassword "789123"
+        }
+        release{
+            storeFile file("/Users/tunaunsal/Doc/private_key.pepk")
+            storePassword "789123"
+            keyAlias "ezdream"
+            keyPassword "789123"
+        }
+    }
+
     buildTypes {
         debug {
             debuggable = true

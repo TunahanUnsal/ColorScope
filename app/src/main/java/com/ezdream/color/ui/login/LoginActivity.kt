@@ -1,11 +1,13 @@
 package com.ezdream.color.ui.login
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.ezdream.color.R
 import com.ezdream.color.databinding.ActivityLoginBinding
+import com.ezdream.color.ui.home.HomeActivity
 import com.ezdream.color.util.UiUtil.getDuration
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -26,13 +28,13 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        val duration = getDuration(applicationContext,R.drawable.splash_3)
+        val duration = getDuration(applicationContext,R.drawable.splash_2)
         val background = object : Thread() {
             override fun run() {
                 try {
-                    sleep(duration.toLong() * 6)
-                    //val intent = Intent(baseContext, HomeActivity::class.java)
-                    //startActivity(intent)
+                    sleep(duration.toLong())
+                    val intent = Intent(baseContext, HomeActivity::class.java)
+                    startActivity(intent)
                     overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
                 }catch (e : Exception){
                     e.printStackTrace()
