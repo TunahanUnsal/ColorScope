@@ -83,6 +83,7 @@ dependencies {
     implementation libs.appcompat
     implementation libs.material
     implementation libs.android.gif.drawable
+    implementation libs.colorpickerview
     testImplementation libs.junit
     androidTestImplementation libs.androidx.test.ext.junit
     androidTestImplementation libs.espresso.core
